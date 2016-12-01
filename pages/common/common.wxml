@@ -1,0 +1,34 @@
+<template name="commentCell">
+<view class="box_outer">
+    <view class="box">
+        <view class="item">
+         <image class="item_image" src="{{item.user.profile_image}}" />   
+        </view>
+        <view class="item">
+            <view style="height:60rpx;">{{item.user.username}}</view>
+            <view style="height:60rpx;">2016-04-16 06:30:21</view>
+        </view>
+    </view>
+    <view class="content">
+        {{item.content}}
+    </view>
+    <view class="grid">
+          <view class="grid_cell">
+              <image src="../../images/assist.png" class="per_icon"/>              
+              <text class="per_num">{{item.user.total_cmt_like_count}}</text>
+         </view>
+        <view class="grid_cell"> 
+        <image src="../../images/good.png" class="per_icon" />
+            <text class="per_num">{{item.like_count}}</text> 
+        </view>
+        <view class="grid_cell"> 
+            <image src="../../images/share.png" class="per_icon" />
+            <text class="per_num">12</text> 
+        </view>
+        <view class="grid_cell"> 
+            <image src="../../images/comment.png" class="per_icon" />
+            <text class="per_num">26</text> 
+        </view>
+    </view>
+  </view>
+  </template>

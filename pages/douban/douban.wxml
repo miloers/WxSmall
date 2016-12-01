@@ -1,0 +1,17 @@
+
+<block wx:for-items="{{datas}}"  wx:for-item="item">
+    <view class="qy_outer" id="{{index}}" bindtap="doSelect">
+        <view class="qy_content">
+            <view class="qy_flex3">
+               <image class="qy_image" src="{{item.large_avatar}}" />
+            </view>
+            <view class="qy_flex1">
+                <view class="qy_intro">  
+                 {{item.name}}
+                </view>
+            </view>
+        </view>    
+    </view>
+</block>
+
+

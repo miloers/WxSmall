@@ -1,0 +1,51 @@
+ <form bindsubmit="ToSubmit">
+
+    <view class="qy_box">
+            <view class="qy_image_outer">
+                <image src="../../images/username.png"></image>
+            </view>
+            <view>
+                <input type="text" placeholder="请输入用户名" name="username" class="qy_input" />
+            </view>
+    </view>
+
+    <view class="qy_box">
+            <view class="qy_image_outer">
+                <image src="../../images/password.png"></image>
+            </view>
+            <view>
+                <input type="" placeholder="＊＊＊＊＊＊" name="password"  password class="qy_input"/>
+            </view>
+    </view>
+
+    <view style="height:60rpx;"></view>
+    
+    <view class="qy_button_outer">
+        <button   formType="submit" class="qy_button">登  录</button>
+    </view>
+
+ </form>
+
+
+
+
+
+ <view  class="qy_to_reg_outer" bindtap="register">
+     <text class="qy_szr30"> 没有账号?立即注册 </text>
+ </view>
+
+ <view style="height:400rpx;">
+
+ </view>
+ <view class="qy_or">
+     ————   OR  ————
+ </view>
+ <view class="qy_go" bindtap="goto">
+     随便逛逛
+ </view>
+
+
+
+
+
+ 

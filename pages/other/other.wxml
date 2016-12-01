@@ -1,0 +1,36 @@
+
+  <block wx:for-items="{{textDataList}}" wx:for-item="item">   
+  <navigator url="comment?id={{item.id}}">
+  <view class="box_outer">
+    <view class="box">
+        <view class="item">
+         <image class="item_image" src="{{item.profile_image}}" />   
+        </view>
+        <view class="item">
+            <view style="height:60rpx;">{{item.name}}</view>
+            <view style="height:60rpx;">{{item.create_time}}</view>
+        </view>
+    </view>
+    <view class="content">
+        {{item.text}}
+    </view>
+    <view class="grid">
+          <view class="grid_cell">
+              <image src="../../images/assist.png" class="per_icon"/>              
+              <text class="per_num">{{item.love}}</text>
+         </view>
+        <view class="grid_cell"> 
+        <image src="../../images/tread.png" class="per_icon" />
+            <text class="per_num">{{item.hate}}</text> 
+        </view>
+        <view class="grid_cell"> 
+            <image src="../../images/comment.png" class="per_icon" />
+            <text class="per_num">{{item.comment}}</text> 
+        </view>
+    </view>
+  </view>
+  </navigator>
+  </block>
+
+
+

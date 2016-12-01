@@ -1,0 +1,70 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+                      <view class="weui-cells weui-cells_after-title">
+                        <view class="weui-cell">
+                            <view class="weui-cell__bd_my"> 
+                              <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover">
+                              </image>
+                              </view>
+                            <view class="weui-cell__ft_my">{{userInfo.nickName}}</view>
+                        </view>
+                    </view>
+                    <view class="weui-cells weui-cells_after-title" wx:for="{{array11}}" wx:for-item="items"> 
+                        <view class="weui-cell">
+                            <view class="weui-cell__bd_my"> 
+                               <image class="userinfo-avatar" src="{{items.img}}" background-size="cover">
+                              </image>
+                            </view>
+                            <view class="weui-cell__ft_my">
+                              {{items.content}}
+                            </view>
+                        </view>
+                    </view>
+                
+
+
+                
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<!--
+<scroll-view scroll-x="true" scroll-y="true" >
+  
+
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <view>
+    hello {{name}}
+  </view>
+  <button bindtap="changeName">Click me!</button>
+
+  <view bindtap="tolog">
+    立即注册登录
+  </view>
+</view>
+</scroll-view>

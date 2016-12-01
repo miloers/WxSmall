@@ -1,0 +1,51 @@
+.qy_box {
+    padding: 25rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.qy_image_outer {
+    float: left;
+    height: 35rpx;
+    line-height: 45rpx;
+    font-size: 20rpx;
+}
+
+image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.qy_input {
+    padding-left: 45rpx;
+    font-size: 27rpx;
+    color: #707070;
+}
+
+.qy_button {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 2rpx;
+    background-color: #3CB371;
+    border: none;
+    color: #fff;
+    font-size: 30rpx;
+}
+
+.qy_button_outer{
+    width:80%;margin:0 auto;height:10rpx;
+}
+
+.qy_to_reg_outer{
+display: flex;flex-direction: column;align-items: center;  padding: 120rpx 0;color:#3CB371;text-decoration:underline; 
+}
+.qy_szr30{
+font-size:30rpx;
+}
+
+.qy_or{
+display:flex;flex-direction:column;align-items:center;padding:20rpx 0;color:#3cb371;font-size:30rpx;
+}
+.qy_go{
+display:flex;flex-direction:column;align-items:center;padding:20rpx 10rpx;color:#3cb371;font-size:30rpx;text-decoration:underline;
+}

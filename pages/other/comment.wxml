@@ -1,0 +1,5 @@
+<import  src="../common/common.wxml" />
+<view wx:for="{{dataList}}" wx:for-item="item">
+    <template is="commentCell" data="{{item}}">
+    </template>
+</view>

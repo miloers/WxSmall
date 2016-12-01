@@ -1,0 +1,51 @@
+.box_outer {
+    padding: 10px;
+    border-bottom: 1px solid #C0C0C0;
+    font-size:26rpx;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+   
+}
+.item_image{
+    border-radius:50%;
+    width:100rpx;
+    height:100rpx;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid_cell {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.tag {
+    height: 40rpx;
+   
+    padding: 20rpx 20rpx;
+    border-radius: 28rpx;
+    background: #EEF5F8;
+    color: #000;
+    font-size: 28rpx;
+    vertical-align: middle;
+}
+
+.content {
+    padding: 10rpx;
+}
+
+.per_icon{
+    height:30rpx;
+    width:30rpx;
+}
+.per_num{
+    padding:0rpx 10rpx;
+}

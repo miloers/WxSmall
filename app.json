@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/other/other",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/login/login",
+        "pages/douban/douban",
+        "pages/douban/user",
+        "pages/other/comment"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#3CB371",
+        "navigationBarTitleText": "Ed Glayxe",
+        "navigationBarTextStyle": "light",
+        "backgroundColor": "#3CB371"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "我的",
+            "iconPath": "images/tabList/my_a.png",
+            "selectedIconPath": "images/tabList/my_b.png"
+        }, {
+            "pagePath": "pages/logs/logs",
+            "text": "日志",
+            "iconPath": "images/tabList/log_a.png",
+            "selectedIconPath": "images/tabList/log_b.png"
+        }, {
+            "pagePath": "pages/other/other",
+            "text": "段子",
+            "iconPath": "images/tabList/joke_a.png",
+            "selectedIconPath": "images/tabList/joke_b.png"
+        }, {
+            "pagePath": "pages/login/login",
+            "text": "登录",
+            "iconPath": "images/tabList/Login_a.png",
+            "selectedIconPath": "images/tabList/Login_b.png"
+        }, {
+            "pagePath": "pages/douban/douban",
+            "text": "用户列表",
+            "iconPath": "images/tabList/user_a.png",
+            "selectedIconPath": "images/tabList/user_b.png"
+        }]
+    }
+}
