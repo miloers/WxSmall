@@ -1,4 +1,7 @@
 <!--logs.wxml-->
+<view>
+外加引入字体 网上随便下了一个。
+</view>
 <view class="font_person">  
 dfasfasfdas
 </view>
